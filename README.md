@@ -31,7 +31,7 @@ Progressive enhancements include:
 - keyboard-visible focus states and high-contrast support;
 - CSS-only entrance and link motion that respects `prefers-reduced-motion`;
 - a canonical URL, crawlable text, sitemap and permissive crawler rules;
-- separate Open Graph images for compact and wide social-preview contexts;
+- a square Open Graph image for reliable compact previews and a separate wide X/Twitter large-card image;
 - linked `WebPage`, `Book`, `Person` and `ImageObject` structured data;
 - a portrait-led 1200 × 1200 image for square messenger previews and a 1200 × 630 literary card for wide previews;
 - browser, Apple touch and installable-site icons.
