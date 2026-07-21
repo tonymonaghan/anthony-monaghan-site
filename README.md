@@ -26,9 +26,9 @@ Progressive enhancements include:
 - keyboard-visible focus states and high-contrast support;
 - CSS-only entrance and link motion that respects `prefers-reduced-motion`;
 - a canonical URL, crawlable text, sitemap and permissive crawler rules;
-- Open Graph and large-card metadata for messaging and social previews;
+- separate Open Graph images for compact and wide social-preview contexts;
 - linked `WebPage`, `Book`, `Person` and `ImageObject` structured data;
-- a versioned 1200 × 630 sharing image to avoid stale messenger caches;
+- a portrait-led 1200 × 1200 image for square messenger previews and a 1200 × 630 literary card for wide previews;
 - browser, Apple touch and installable-site icons.
 
 Search and AI discovery use the same public, human-readable page. There is no hidden keyword copy or special AI-only content: structured data mirrors the visible text, and crawlers can access the canonical HTML directly.
@@ -37,7 +37,8 @@ Search and AI discovery use the same public, human-readable page. There is no hi
 
 - `index.html` — page content, metadata and responsive styling
 - `tony-headshot.jpg`, `tony-headshot-700.jpg` — responsive portrait images
-- `snug-social-preview.jpg` — social and messaging preview image
+- `snug-social-square-v1.jpg` — compact and square messaging preview image
+- `snug-social-preview.jpg` — wide social-preview image
 - `favicon.*`, `apple-touch-icon.png`, `icon-*.png` — browser and device icons
 - `site.webmanifest` — browser and installed-site metadata
 - `robots.txt`, `sitemap.xml` — crawler discovery files
