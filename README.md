@@ -1,30 +1,48 @@
-# Anthony Monaghan – Stage 1 GitHub test site, v6
+# Anthony Monaghan – GitHub Pages site, v7
 
-Version 6 corrects the scale mismatch in v5.
+## What changed
 
-## Desktop reference geometry
+- Desktop geometry remains unchanged from v6.
+- Ordinary portrait phones keep the 36 px text and 150 px portrait.
+- The text now reflows against the real device width instead of scaling the
+  whole composition with container-query units.
+- Mobile spacing is tightened so the text, portrait and name fit within the
+  normal phone viewport.
+- Very narrow legacy screens receive a modest scale reduction.
+- Short landscape phones use a compact two-column layout.
+- Horizontal overflow is prevented; vertical scrolling remains available if
+  browser accessibility settings enlarge the text.
 
-- WordPress-style system sans-serif stack
-- Segoe UI on Windows
-- 36 px main text
-- approximately 40 px line height
-- 720 px centred text column
-- 150 px portrait
-- 84 px text-to-portrait gap
-- 18 px name, slightly closer to the portrait
+## Domain-transition code included
 
-The ratios are preserved on narrower or shorter screens, so the text wraps and
-the complete composition remains visible within one viewport without scrolling.
+- Production indexing is enabled in `index.html`.
+- `robots.txt` allows crawling and declares the sitemap.
+- `sitemap.xml` lists the canonical production URL.
+- `CNAME` contains `anthonymonaghan.com`.
+- Canonical, Open Graph, Twitter-card and structured-data URLs all use the
+  production domain.
+- `site.webmanifest` now uses root-relative paths suitable for the custom domain.
 
-## Updating the cloned repository
+## Update the cloned repository
 
-Replace the existing `index.html` with the v6 file. The other files are
-unchanged, although the full package is provided for completeness.
+Replace these files in the local clone:
 
-Then use GitHub Desktop:
+- `index.html`
+- `robots.txt`
+- `sitemap.xml`
+- `site.webmanifest`
+- `README.md`
 
-1. Review the changed file.
-2. Commit with a summary such as `Correct original layout scale`.
-3. Push origin.
-4. Wait for GitHub Pages to rebuild.
-5. Refresh the test address with Ctrl+F5.
+Add:
+
+- `CNAME`
+
+Then commit and push. Suggested commit message:
+
+`Make mobile layout responsive and prepare custom domain`
+
+After GitHub Pages rebuilds, check **Settings → Pages**. The custom-domain field
+should show `anthonymonaghan.com`; enter and save it there if it does not.
+
+Do not change the WordPress DNS records until the GitHub test deployment has
+rebuilt successfully with this version.
