@@ -13,7 +13,12 @@ Its visual language reflects the novel’s two worlds:
 - warm uncoated paper and editorial typography evoke the sanctuary of the Snug;
 - restrained lido blue recalls the North Sea, the swimming pool and Tony’s portrait;
 - Newsreader provides the literary display voice, while Manrope keeps supporting information clear and contemporary;
-- generous whitespace and subtle CSS-only motion add presence without distracting from the book.
+- a centred editorial measure, intentional left/right asymmetry, optical positioning and proportioned whitespace hold the page together without distracting from the book;
+- subtle CSS-only motion adds presence while preserving the quiet composition.
+
+The wording follows the same hierarchy. `SNUG` is roman in the tracked masthead because it acts as an imprint label; book titles are italicised when they appear in prose. The thank-you message recognises readers of the opening chapters without revealing later plot developments, and the author credential remains visible but secondary to the manuscript request.
+
+A separate private handover manual records the full content rationale, reconstruction specification, responsive measurements, rejected alternatives and operating history. The public repository intentionally keeps that internal context out of the published source documentation.
 
 ## Technical approach
 
