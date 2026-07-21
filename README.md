@@ -1,33 +1,30 @@
-# Anthony Monaghan – Stage 1 GitHub test site
+# Anthony Monaghan – Stage 1 GitHub test site, v6
 
-This version reproduces the current WordPress presentation rather than
-redesigning it.
+Version 6 corrects the scale mismatch in v5.
 
-## Fixed desktop geometry
+## Desktop reference geometry
 
-- Inter, regular weight
-- 24 px text
-- 27 px line height
-- 480 px centred text column
-- 80 px top spacing
-- 48 px gap before the portrait
-- 96 px portrait
-- 13 px name, moved slightly closer to the portrait
+- WordPress-style system sans-serif stack
+- Segoe UI on Windows
+- 36 px main text
+- approximately 40 px line height
+- 720 px centred text column
+- 150 px portrait
+- 84 px text-to-portrait gap
+- 18 px name, slightly closer to the portrait
 
-At that geometry, the desktop lines wrap exactly as follows:
+The ratios are preserved on narrower or shorter screens, so the text wraps and
+the complete composition remains visible within one viewport without scrolling.
 
-1. Thank you for reading the opening
-2. chapters of “Snug”. I believe this novel
-3. can launch my writing career. All I need is
-4. the right agent to say, “Send me the full
-5. manuscript!” I hope that will be you.
+## Updating the cloned repository
 
-The narrow-screen rule retains the same composition and only reduces the text
-where necessary to keep all content within one screen. The portrait remains
-96 px wide on ordinary portrait phones.
+Replace the existing `index.html` with the v6 file. The other files are
+unchanged, although the full package is provided for completeness.
 
-Upload all files to the GitHub repository root and publish Pages from `main`
-and `/(root)`.
+Then use GitHub Desktop:
 
-The temporary GitHub test site remains excluded from search engines until the
-custom domain is connected.
+1. Review the changed file.
+2. Commit with a summary such as `Correct original layout scale`.
+3. Push origin.
+4. Wait for GitHub Pages to rebuild.
+5. Refresh the test address with Ctrl+F5.
